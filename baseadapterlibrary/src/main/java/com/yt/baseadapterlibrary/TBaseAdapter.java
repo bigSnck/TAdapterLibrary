@@ -8,10 +8,10 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.yt.baseadapterlibrary.base.adapter.MultiTypeSupport;
-import com.yt.baseadapterlibrary.base.adapter.OnItemClickCallback;
-import com.yt.baseadapterlibrary.base.adapter.OnItemLongClickCallback;
-import com.yt.baseadapterlibrary.base.adapter.ViewHolder;
+import com.yt.baseadapterlibrary.view.MultiTypeSupport;
+import com.yt.baseadapterlibrary.view.OnItemClickCallback;
+import com.yt.baseadapterlibrary.view.OnItemLongClickCallback;
+import com.yt.baseadapterlibrary.view.ViewHolder;
 
 import java.util.List;
 
@@ -74,7 +74,7 @@ public abstract class TBaseAdapter<T> extends RecyclerView.Adapter<ViewHolder> {
             @Override
             public void onClick(View view) {
                 if (null != onItemClickCallback) {
-                    onItemClickCallback.onClick(mData.get(position));
+                    onItemClickCallback.onClick(mData.get(position),position);
                 }
             }
         });
@@ -84,7 +84,7 @@ public abstract class TBaseAdapter<T> extends RecyclerView.Adapter<ViewHolder> {
             @Override
             public boolean onLongClick(View view) {
                 if (null != onItemLongClickCallback) {
-                    onItemLongClickCallback.onLongClick(mData.get(position));
+                    onItemLongClickCallback.onLongClick(mData.get(position),position);
                 }
                 return false;
             }

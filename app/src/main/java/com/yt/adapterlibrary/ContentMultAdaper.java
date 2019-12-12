@@ -4,8 +4,8 @@ import android.content.Context;
 import android.widget.TextView;
 
 import com.yt.baseadapterlibrary.TBaseAdapter;
-import com.yt.baseadapterlibrary.base.adapter.MultiTypeSupport;
-import com.yt.baseadapterlibrary.base.adapter.ViewHolder;
+import com.yt.baseadapterlibrary.view.MultiTypeSupport;
+import com.yt.baseadapterlibrary.view.ViewHolder;
 
 import java.util.List;
 

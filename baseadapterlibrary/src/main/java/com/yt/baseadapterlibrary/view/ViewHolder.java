@@ -1,4 +1,4 @@
-package com.yt.baseadapterlibrary.base.adapter;
+package com.yt.baseadapterlibrary.view;
 
 import android.content.Context;
 import android.util.SparseArray;
