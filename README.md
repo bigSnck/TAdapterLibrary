@@ -15,7 +15,7 @@ allprojects {
 #### Step2: 在工程中添加依赖：<br>
 ```
 dependencies {
-       implementation 'com.github.bigSnck:TAdapterLibrary:1.0.1'
+       implementation 'com.github.bigSnck:TAdapterLibrary:1.0.3'
 }
 ```
 
